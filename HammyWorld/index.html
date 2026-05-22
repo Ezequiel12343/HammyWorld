@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammy world- Tienda Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="header-logo-link">
+            <img src="logo.jpeg" alt="Hammy World Logo" class="header-logo">
+        </a>
+        <h1>¡Hammy World!</h1>
+        <p>¡Los compañeros más adorables y suavecitos!</p>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div>
+            <h2 class="animacion-hamster">¡Bienvenidos al mundo de los hamster!</h2>
+            <p>Los peluches más tiernos y coleccionables para todo publico</p>
+            <a href="#productos" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="productos" class="section">
+            <h2>Nuestros Peluches</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="67.jpg" alt="Hamster Six Seven">
+                    <h3>Hamster Six Seven</h3>
+                    <div class="precio">$6.70</div>
+                    <p>Meme malisimo...</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
+
+                <div class="producto">
+                    <img src="chuuu.jpg" alt="Hamster muy chuu ">
+                    <h3>Hamster muy chuu</h3>
+                    <div class="precio">$30.99</div>
+                    <p>Hamster blanco puro con detalles rosados. ¡Edición limitada!</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
+
+                <div class="producto">
+                    <img src="paleta.jpg" alt="Hamster Paleta">
+                    <h3>Hamster Paleta</h3>
+                    <div class="precio">$9.99</div>
+                    <p>El hamster más energético con colores vibrantes y brillantes, la paleta es aparte.</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
+                <div class="producto">
+                    <img src="origen.jpg" alt="El origen">
+                    <h3>El origen...</h3>
+                    <div class="precio">$9.999.999.999.999</div>
+                    <p>El fucking verdaderisimo hamster OG de la cual se podria decir que nacio este maravilloso momo :0.</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
+                <div class="producto">
+                    <img src="peque.jpg" alt="Peque">
+                    <h3>Hamster adorable y peque...</h3>
+                    <div class="precio">$3.99</div>
+                    <p>Al igual que el hamster, el precio es pequeño xd.</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
+                <div class="producto">
+                    <img src="tito.jpeg" alt="Momo">
+                    <h3>Tito calderon</h3>
+                    <div class="precio">$3 propiedades</div>
+                    <p>Este es para tenerlo al lado y no sentirte solo xd</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="section">
+            <h2>¿Por qué elegir nuestros peluches?</h2>
+            <div class="caracteristicas">
+                <div class="caracteristica">
+                    <div></div>
+                    <h3>Material Premium</h3>
+                    <p>Felpa hipoalergénica ultra suave de la más alta calidad.</p>
+                </div>
+                <div class="caracteristica">
+                    <div></div>
+                    <h3>Exceso de aura</h3>
+                    <p>Tener este hamster te va a dar +100 de aura y +670 si es el hamster six seven</p>
+                </div>
+                <div class="caracteristica">
+                    <div></div>
+                    <h3>Fácil Limpieza</h3>
+                    <p>Lavable en lavadora(Y si, no lo vas a lavar en la cloaca). Mantiene su suavidad después del lavado.</p>
+                </div>
+                <div class="caracteristica">
+                    <div></div>
+                    <h3>Envío Rápido</h3>
+                    <p>Envío gratis a todo el país en 24-48 horas con nuestro servicio IshowPackage.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-card">
+                <div class="footer-video-wrapper">
+                    <iframe src="videoplayback (1).mp4"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+    
+            <div class="footer-card">
+                <div class="footer-video-wrapper">
+                    <iframe src="videoplayback.mp4"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    
+        <a href="https://meme.fandom.com/es/wiki/Staring_Hamster" target="_blank" class="ig-link">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.WfYOG_93x_jpoZCEsv10wQHaHa?w=1001&h=1001&rs=1&pid=ImgDetMain&o=7&rm=3" alt="fandom" class="fdm-logo">
+        </a>
+    </footer>
+
+    <script>
+        // Animación suave para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efecto de partículas de hamster
+        function crearParticula() {
+            const particula = document.createElement('div');
+            particula.innerHTML = '🐹';
+            particula.style.position = 'fixed';
+            particula.style.left = Math.random() * 100 + 'vw';
+            particula.style.top = '100vh';
+            particula.style.fontSize = '20px';
+            particula.style.pointerEvents = 'none';
+            particula.style.zIndex = '1000';
+            particula.style.animation = 'bounce 3s linear forwards';
+            document.body.appendChild(particula);
+
+            setTimeout(() => {
+                particula.remove();
+            }, 3000);
+        }
+
+        setInterval(() => {
+            if (Math.random() > 0.7) {
+                crearParticula();
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
